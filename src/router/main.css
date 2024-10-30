@@ -94,7 +94,7 @@
   outline: 1px solid rgba(255, 0, 0, 0.1);
 }
 .note::before {
-  height: 8px;
+  height: 9.5px;
   width: 12px;
 }
 /* .whole.note::before {
@@ -137,19 +137,19 @@
   top: 49px;
 }
 .note.e4 {
-  top: 44.5px;
+  top: 44px;
 }
 .note.f4 {
-  top: 39.5px;
+  top: 39px;
 }
 .note.g4 {
-  top: 35px;
+  top: 34px;
 }
 .note.a4 {
-  top: 30px;
+  top: 29px;
 }
 .note.b4 {
-  top: 25px;
+  top: 24px;
 }
 .note.b4::after {
   top: 3px;
@@ -157,35 +157,35 @@
 }
 
 .note.c5 {
-  top: 20px;
+  top: 19px;
 }
 .note.c5::after {
   top: 3px;
   left: 0;
 }
 .note.d5 {
-  top: 15.5px;
+  top: 14.5px;
 }
 .note.d5::after {
   top: 3px;
   left: 0;
 }
 .note.e5 {
-  top: 10px;
+  top: 9px;
 }
 .note.e5::after {
   top: 3px;
   left: 0;
 }
 .note.f5 {
-  top: 5.5px;
+  top: 4.5px;
 }
 .note.f5::after {
   top: 3px;
   left: 0;
 }
 .note.g5 {
-  top: 1px;
+  top: 0px;
 }
 .note.g5::after {
   top: 3px;
@@ -193,14 +193,14 @@
 }
 /* TODO: 가로줄 */
 .note.a5 {
-  top: -3.5px;
+  top: -5px;
 }
 .note.a5::after {
   top: 3px;
   left: 0;
 }
 .note.b5 {
-  top: -8px;
+  top: -9.5px;
 }
 .note.b5::after {
   top: 3px;
