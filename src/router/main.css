@@ -84,7 +84,7 @@
   background-color: rgba(0, 255, 0, 0.1);
 }
 .note {
-  position: relative;
+  position: absolute;
   /* display: inline-block; */
   width: 12px;
   height: 32px;
@@ -98,7 +98,7 @@
   height: 8px;
   width: 12px;
 }
-.whole.note::before {
+/* .whole.note::before {
   position: absolute;
   content: "";
   box-sizing: border-box;
@@ -106,7 +106,7 @@
   border-left-width: 4px;
   border-right-width: 4px;
   border-radius: 50%;
-}
+} */
 .half.note::after,
 .quarter.note::after {
   content: "";
@@ -133,39 +133,84 @@
 .quarter.note::before {
   background-color: black;
 }
+
 .note.d4 {
-  top: 36px;
+  top: 47px;
 }
 .note.e4 {
-  top: 26px;
+  top: 42.5px;
 }
 .note.f4 {
-  top: 34px;
+  top: 38px;
 }
 .note.g4 {
-  top: 24px;
+  top: 33.5px;
 }
-.note.a5 {
-  top: 16px;
+.note.a4 {
+  top: 29px;
 }
-.note.b5 {
-  top: 12px;
+.note.b4 {
+  top: 24.5px;
 }
+.note.b4::after {
+  top: 3px;
+  left: 0;
+}
+
 .note.c5 {
-  top: 8px;
+  top: 20px;
+}
+.note.c5::after {
+  top: 3px;
+  left: 0;
 }
 .note.d5 {
-  top: 4px;
+  top: 16.5px;
+}
+.note.d5::after {
+  top: 3px;
+  left: 0;
 }
 .note.e5 {
-  top: 0px;
+  top: 12px;
+}
+.note.e5::after {
+  top: 3px;
+  left: 0;
 }
 .note.f5 {
-  top: -4px;
+  top: 8px;
+}
+.note.f5::after {
+  top: 3px;
+  left: 0;
 }
 .note.g5 {
-  top: -8px;
+  top: 3.5px;
 }
+.note.g5::after {
+  top: 3px;
+  left: 0;
+}
+/* TODO: 가로줄 */
+.note.a5 {
+  top: -1px;
+}
+.note.a5::after {
+  top: 3px;
+  left: 0;
+}
+.note.b5 {
+  top: -5px;
+}
+.note.b5::after {
+  top: 3px;
+  left: 0;
+}
+
+
+
+
 .quarter.note.d5::after,
 .half.note.d5::after,
 .quarter.note.e5::after,

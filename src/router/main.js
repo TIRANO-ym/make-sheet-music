@@ -20,8 +20,8 @@ export default function Main() {
 
   return <Wrapper className='layout-wrapper'>
     <div class="stave2">
-      <div class="half note e4"></div>
-      <div class="quarter note f4"></div>
+      {/* <div class="half note e4"></div> */}
+      <div class="quarter note b5"></div>
       {/* <div class="quarter note c5"></div> */}
     </div>
     <div class="stave2">
