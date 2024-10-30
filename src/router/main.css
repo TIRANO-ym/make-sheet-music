@@ -1,5 +1,4 @@
 .stave {
-  position: absolute;
   display: grid;
   row-gap: 0;
   grid-template-rows:
@@ -24,7 +23,7 @@
 
   background-image:    url('data:image/svg+xml;charset=utf-8;base64,PHN2ZyB2aWV3Qm94PSIwIC00LjUgMSA5IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPiAgICAgICAgPHN0eWxlPmxpbmV7dmVjdG9yLWVmZmVjdDpub24tc2NhbGluZy1zdHJva2U7c3Ryb2tlOmN1cnJlbnRjb2xvcjtzdHJva2Utd2lkdGg6MC4wNGVtO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2UtbGluZWNhcDpyb3VuZDtmaWxsOm5vbmU7fTwvc3R5bGU+ICAgICAgICA8bGluZSB4MT0iMCIgeDI9IjEiIHkxPSI0IiB5Mj0iNCI+PC9saW5lPiAgICAgICAgPGxpbmUgeDE9IjAiIHgyPSIxIiB5MT0iMiIgeTI9IjIiPjwvbGluZT4gICAgICAgIDxsaW5lIHgxPSIwIiB4Mj0iMSIgeTE9IjAiIHkyPSIwIj48L2xpbmU+ICAgICAgICA8bGluZSB4MT0iMCIgeDI9IjEiIHkxPSItMiIgeTI9Ii0yIj48L2xpbmU+ICAgICAgICA8bGluZSB4MT0iMCIgeDI9IjEiIHkxPSItNCIgeTI9Ii00Ij48L2xpbmU+ICAgIDwvc3ZnPg==');
   background-repeat:   no-repeat;
-  background-size:     100% 2.25em;
+  background-size:     100% 2.5em;
   background-position: 0 50%;
 }
 
@@ -135,22 +134,22 @@
 }
 
 .note.d4 {
-  top: 47px;
+  top: 49px;
 }
 .note.e4 {
-  top: 42.5px;
+  top: 44.5px;
 }
 .note.f4 {
-  top: 38px;
+  top: 39.5px;
 }
 .note.g4 {
-  top: 33.5px;
+  top: 35px;
 }
 .note.a4 {
-  top: 29px;
+  top: 30px;
 }
 .note.b4 {
-  top: 24.5px;
+  top: 25px;
 }
 .note.b4::after {
   top: 3px;
@@ -165,28 +164,28 @@
   left: 0;
 }
 .note.d5 {
-  top: 16.5px;
+  top: 15.5px;
 }
 .note.d5::after {
   top: 3px;
   left: 0;
 }
 .note.e5 {
-  top: 12px;
+  top: 10px;
 }
 .note.e5::after {
   top: 3px;
   left: 0;
 }
 .note.f5 {
-  top: 8px;
+  top: 5.5px;
 }
 .note.f5::after {
   top: 3px;
   left: 0;
 }
 .note.g5 {
-  top: 3.5px;
+  top: 1px;
 }
 .note.g5::after {
   top: 3px;
@@ -194,14 +193,14 @@
 }
 /* TODO: 가로줄 */
 .note.a5 {
-  top: -1px;
+  top: -3.5px;
 }
 .note.a5::after {
   top: 3px;
   left: 0;
 }
 .note.b5 {
-  top: -5px;
+  top: -8px;
 }
 .note.b5::after {
   top: 3px;
