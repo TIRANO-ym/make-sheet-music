@@ -2,14 +2,11 @@ import styled from "styled-components";
 import { useEffect, useState } from "react";
 import { useTranslation } from 'react-i18next';
 import { useOutletContext } from 'react-router-dom';
+import './main.css';
 
 const Wrapper = styled.div`
-  display: grid;
-  gap: 50px;
-  grid-template-columns: 20% 3fr;
-  padding: 50px;
   width: 100%;
-  max-width: 1500px;
+  // max-width: 1500px;
   height: 100%;
 `;
 
@@ -22,6 +19,18 @@ export default function Main() {
   }, []);
 
   return <Wrapper className='layout-wrapper'>
-    Main!
+    <div class="stave2">
+      <div class="half note e4"></div>
+      <div class="quarter note f4"></div>
+      {/* <div class="quarter note c5"></div> */}
+    </div>
+    <div class="stave2">
+      <svg data-pitch="G4" class="note">
+        <use href="#note[2]"></use>
+      </svg>
+      <svg data-pitch="E5" class="note">
+        <use href="#note[2]"></use>
+      </svg>
+    </div>
   </Wrapper>;
 }

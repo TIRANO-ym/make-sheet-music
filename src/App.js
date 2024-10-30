@@ -67,7 +67,7 @@ function App() {
       i18n.changeLanguage(lang);
     }
     const ctheme = localStorage.getItem('theme');
-    setCurrentTheme(ctheme ? ctheme : 'dark');
+    setCurrentTheme(ctheme ? ctheme : 'light');
   }, []);
 
   return (
