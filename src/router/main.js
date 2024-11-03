@@ -19,18 +19,44 @@ export default function Main() {
   }, []);
 
   return <Wrapper className='layout-wrapper'>
-    <div class="stave2">
-      <div class="half note a4"></div>
-      <div class="quarter note f4"></div>
-      {/* <div class="quarter note c5"></div> */}
+    <div className="stave">
+      <div className="measure">
+        <div className="beat">
+          <div className="half note a4"></div>
+          <div className="quarter note f4"></div>
+          <div className="quarter note d4"></div>
+        </div>
+        <div className="beat">
+          <div className="half note a4"></div>
+          <div className="quarter note f4"></div>
+        </div>
+        <div className="beat">
+          <div className="half note a4"></div>
+          <div className="quarter note f4"></div>
+        </div>
+        <div className="beat">
+          <div className="half note a4"></div>
+          <div className="quarter note f4"></div>
+        </div>
+      </div>
+      <div className="measure">
+        <div className="beat">
+          <div className="half note a4"></div>
+          <div className="quarter note f4"></div>
+        </div>
+        <div className="beat">
+        </div>
+      </div>
+      <div className="measure"></div>
+      <div className="measure"></div>
     </div>
-    <div class="stave2">
+    {/* <div class="stave2">
       <svg data-pitch="G4" class="note">
         <use href="#note[2]"></use>
       </svg>
       <svg data-pitch="E5" class="note">
         <use href="#note[2]"></use>
       </svg>
-    </div>
+    </div> */}
   </Wrapper>;
 }

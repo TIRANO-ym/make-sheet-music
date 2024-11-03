@@ -1,4 +1,4 @@
-.stave {
+/* .stave {
   display: grid;
   row-gap: 0;
   grid-template-rows:
@@ -10,24 +10,43 @@
   background-repeat:   no-repeat;
   background-size:     100% 2.25em;
   background-position: 0 50%;
+} */
+
+/* 한박자 */
+.beat {
+  flex: 1;
+  display: grid;
 }
 
-.stave2 {
-  display: grid;
-  row-gap: 0;
-  grid-template-rows:
+/* 한마디 */
+.measure {
+  flex: 1;
+  border-left: 1px solid black;
+  height: 2.35em;
+  display: flex;
+  /* row-gap: 0; */
+  /* grid-template-rows:
       [A5] 0.25em [G5] 0.25em [F5] 0.25em [E5] 0.25em
       [D5] 0.25em [C5] 0.25em [B4] 0.25em [A4] 0.25em
       [G4] 0.25em [F4] 0.25em [E4] 0.25em [D4] 0.25em
-      [C4] 0.25em ;
+      [C4] 0.25em ; */
+}
 
+/* 오선보 한줄 */
+.stave {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 3.25em;
+  padding-left: 10px;
   background-image:    url('data:image/svg+xml;charset=utf-8;base64,PHN2ZyB2aWV3Qm94PSIwIC00LjUgMSA5IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPiAgICAgICAgPHN0eWxlPmxpbmV7dmVjdG9yLWVmZmVjdDpub24tc2NhbGluZy1zdHJva2U7c3Ryb2tlOmN1cnJlbnRjb2xvcjtzdHJva2Utd2lkdGg6MC4wNGVtO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2UtbGluZWNhcDpyb3VuZDtmaWxsOm5vbmU7fTwvc3R5bGU+ICAgICAgICA8bGluZSB4MT0iMCIgeDI9IjEiIHkxPSI0IiB5Mj0iNCI+PC9saW5lPiAgICAgICAgPGxpbmUgeDE9IjAiIHgyPSIxIiB5MT0iMiIgeTI9IjIiPjwvbGluZT4gICAgICAgIDxsaW5lIHgxPSIwIiB4Mj0iMSIgeTE9IjAiIHkyPSIwIj48L2xpbmU+ICAgICAgICA8bGluZSB4MT0iMCIgeDI9IjEiIHkxPSItMiIgeTI9Ii0yIj48L2xpbmU+ICAgICAgICA8bGluZSB4MT0iMCIgeDI9IjEiIHkxPSItNCIgeTI9Ii00Ij48L2xpbmU+ICAgIDwvc3ZnPg==');
   background-repeat:   no-repeat;
   background-size:     100% 2.5em;
   background-position: 0 50%;
 }
 
-.stave > [data-pitch^="B"][data-pitch$="5"] { grid-row-start: 5; }
+/* .stave > [data-pitch^="B"][data-pitch$="5"] { grid-row-start: 5; }
 .stave > [data-pitch^="A"][data-pitch$="5"] { grid-row-start: 5; }
 .stave > [data-pitch^="G"][data-pitch$="5"] { grid-row-start: 5; }
 .stave > [data-pitch^="F"][data-pitch$="5"] { grid-row-start: 5; }
@@ -49,7 +68,7 @@
 .stave > [data-pitch^="F"][data-pitch$="3"] { grid-row-start: 3; }
 .stave > [data-pitch^="E"][data-pitch$="3"] { grid-row-start: 3; }
 .stave > [data-pitch^="D"][data-pitch$="3"] { grid-row-start: 3; }
-.stave > [data-pitch^="C"][data-pitch$="3"] { grid-row-start: 3; }
+.stave > [data-pitch^="C"][data-pitch$="3"] { grid-row-start: 3; } */
 
 
 .bar {
@@ -82,6 +101,7 @@
 .staff.debug {
   background-color: rgba(0, 255, 0, 0.1);
 }
+/* 음표하나 */
 .note {
   position: absolute;
   /* display: inline-block; */
