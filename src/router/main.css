@@ -153,6 +153,12 @@
   background-color: black;
 }
 
+.eighth.note::after {
+  content: "\266A";
+  height: 9.5px;
+  width: 120px;
+}
+
 .note.d4 {
   top: 49px;
 }

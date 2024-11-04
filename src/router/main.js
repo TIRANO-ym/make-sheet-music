@@ -31,8 +31,7 @@ export default function Main() {
           <div className="quarter note f4"></div>
         </div>
         <div className="beat">
-          <div className="half note a4"></div>
-          <div className="quarter note f4"></div>
+          <div className="eighth note f4"></div>
         </div>
         <div className="beat">
           <div className="half note a4"></div>
